@@ -186,6 +186,13 @@ button:focus {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
+
+    form,
+    input,
+    label,
+    textarea {
+        width: auto;
+    }
 }
 
 @media all and (min-width: 501px) and (max-width: 750px) {
@@ -334,7 +341,7 @@ button:focus {
 }
 
 form {
-    width: 500px;
+    max-width: 700px;
 }
 
 label,
