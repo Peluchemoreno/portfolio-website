@@ -1,0 +1,245 @@
+/*Colors used*/
+
+:root {
+    --text-color: #2b2b2b;
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --light-blue: rgb(199, 247, 247);
+    --dark-green: rgb(132, 97, 16);
+    --red: rgb(252, 6, 6);
+    --light-grey: rgb(206, 202, 202);
+    --orange-saturated: #f76414;
+    --light-orange: #edc655;
+    --lighest-orange: #fcffad;
+    --normal-font-size: 1rem;
+    --light-font-weight: 400;
+    --heavy-font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Abel', Arial, Helvetica, sans-serif;
+    font-weight: var(--light-font-weight);
+    letter-spacing: .125rem;
+    font-size: var(--normal-font-size);
+    background-color: var(--light-blue);
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: var(--heavy-font-weight);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: var(--heavy-font-weight);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+a:visited {
+
+    color: var(--dark-green);
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a:active {
+
+    color: var(--red);
+}
+
+.default-link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button,
+button {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: .5rem;
+    border: none;
+    font-family: inherit;
+    background-color: var(--primary-color);
+    font-size: var(--normal-font-size);
+    color: var(--light-grey);
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
+    font-weight: var(--heavy-font-weight);
+}
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.profile__portrait {
+    width: 250px;
+    height: 250px;
+    margin-right: 40px;
+    float: left;
+    border-radius: 50%;
+}
+
+.page__footer {
+    clear: both;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.page-header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    /* grid-template-rows: 300px 300px; */
+}
+
+.grid__item {
+    background-color: var(--light-grey);
+    padding: 15px;
+}
+
+@media all and (max-width: 500px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+
+    .grid__item:last-child {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+
+
+    @keyframes color-change {
+        0% {
+            fill: var(--light-orange);
+        }
+
+        50% {
+            fill: var(--lighest-orange);
+        }
+
+        100% {
+            fill: var(--orange-saturated);
+        }
+    }
+
+    .sun {
+        animation:
+            /*duration*/
+            4s
+            /*name*/
+            color-change
+            /*iteration-count*/
+            infinite
+            /*direction*/
+            alternate
+            /*timing-function*/
+            linear;
+
+    }
+
+    @keyframes cloud-move {
+        from {
+            transform: translate(0, 50px);
+        }
+
+        to {
+            transform: translate(200px, 50px);
+        }
+    }
+
+    .cloud-front {
+        animation: 30s cloud-move infinite alternate linear;
+    }
+
+    @keyframes cloud-move-reverse {
+        from {
+            transform: translate(446px, 48px);
+        }
+
+        to {
+            transform: translate(100px, 48px);
+        }
+    }
+
+    .cloud-back {
+        animation: 30s cloud-move-reverse infinite alternate linear;
+    }
+}
+
+/*delete this later*/
