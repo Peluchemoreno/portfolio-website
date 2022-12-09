@@ -147,6 +147,7 @@ button:focus {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 200px;
     flex: 0 1 200px;
+    height: 70px;
 }
 
 .page-header__item:last-child {
@@ -372,4 +373,9 @@ textarea {
 
 ul {
     padding-left: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
 }
