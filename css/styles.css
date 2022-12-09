@@ -169,6 +169,21 @@ button:focus {
     textarea {
         width: auto;
     }
+    .button {
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+        text-align: center;
+    }
+    h1,h2 {
+        text-align: center;
+    }
+    .profile__portrait {
+        float: none;
+    }
+    .profile {
+        text-align: center;
+    }
 }
 
 @media all and (min-width: 501px) and (max-width: 750px) {
