@@ -63,7 +63,7 @@ a:active {
     margin-bottom: .5rem;
     border: none;
     font-family: inherit;
-    background-color: #357b70;
+    background: linear-gradient(to bottom right, #357b70, #214c46);
     font-size: 1rem;
     color: white;
     padding: 10px;
@@ -81,7 +81,7 @@ button {
     margin-bottom: .5rem;
     border: none;
     font-family: inherit;
-    background-color: #357b70;
+    background: linear-gradient(to bottom right, #357b70, #214c46);
     font-size: 1rem;
     color: white;
     padding: 10px;
@@ -102,7 +102,7 @@ button:focus {
 }
 
 .button-secondary {
-    background-color: #e0b354;
+    background: linear-gradient(to bottom right, #e0b354, #b49044);
     color: #2b2b2b;
 }
 
@@ -177,7 +177,7 @@ button:focus {
 }
 
 .grid__item {
-    background-color: rgb(206, 202, 202);
+    background: linear-gradient(to bottom right,rgb(206, 202, 202), rgb(164, 164, 164));
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
@@ -210,6 +210,10 @@ button:focus {
     }
     .profile {
         text-align: center;
+    }
+
+    .cta {
+        width: auto;
     }
 }
 
@@ -377,7 +381,7 @@ textarea {
     font-weight: 700;
     border-radius: 5px;
     border: none;
-    background-color: #357b70;
+    background: linear-gradient(to bottom right, #357b70, #214c46);
     color: white;
     letter-spacing: 3px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);

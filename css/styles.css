@@ -72,7 +72,7 @@ button {
     margin-bottom: .5rem;
     border: none;
     font-family: inherit;
-    background-color: var(--primary-color);
+    background: linear-gradient(to bottom right, var(--primary-color), #214c46);
     font-size: var(--normal-font-size);
     color: var(--light-grey);
     padding: 10px;
@@ -91,7 +91,7 @@ button:focus {
 }
 
 .button-secondary {
-    background-color: var(--secondary-color);
+    background: linear-gradient(to bottom right, var(--secondary-color), #b49044);
     color: var(--text-color);
 }
 
@@ -151,7 +151,7 @@ button:focus {
 }
 
 .grid__item {
-    background-color: rgb(206, 202, 202);
+    background: linear-gradient(to bottom right,rgb(206, 202, 202), rgb(164, 164, 164));
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
@@ -183,6 +183,9 @@ button:focus {
     }
     .profile {
         text-align: center;
+    }
+    .cta {
+        width: auto;
     }
 }
 
@@ -296,7 +299,7 @@ textarea {
     font-weight: 700;
     border-radius: 5px;
     border: none;
-    background-color: #357b70;
+    background: linear-gradient(to bottom right, var(--primary-color), #214c46);
     color: white;
     letter-spacing: 3px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
