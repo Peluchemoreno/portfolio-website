@@ -218,11 +218,14 @@ button:focus {
 @media all and (max-width: 500px) {
 
     .two-col-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 5rem;
     }
 
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
 
     form,
@@ -237,17 +240,60 @@ button:focus {
         width: 250px;
         text-align: center;
     }
-    h1,h2 {
+    /* .hollow-button {
+       display: inline-block;
+       margin-top: 20px;
+    } */
+    .hollow-button,.hollow-button2{
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+    .intro-paragraph {
+        font-size: 1.9rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+    .intro-paragraph--sub{
+        font-size: .8rem;
+    }
+    .home-page-title {
+        display: inline-block;
+        font-size: 2.5rem;
+        padding: 3px
+    }
+
+
+    h1,h2{
+        text-align: left;
+        line-height: 2.5rem;
+    }
+    .about-me-title{
+        grid-column: span auto;
+        order: -2;
+    }
+
+    .grit-it{
+        display: block;
         text-align: center;
     }
-    .profile__portrait {
-        float: none;
+    .grid-it.pic{
+        display: block;
+        text-align: center;
+        order: -1;
     }
     .profile {
-        text-align: center;
+        padding: 0 20px;
     }
     .cta {
         width: auto;
+    }
+    p,li,th,td {
+        font-size: .9rem;
+    }
+    .page-header__item{
+        height: 50px;
+        flex: 0 0 50px;
     }
 }
 
@@ -255,6 +301,8 @@ button:focus {
     .grid {
         grid-template-columns: 1fr 1fr;
     }
+
+
 }
 
 @media all and (max-width: 750px) {
