@@ -1,17 +1,17 @@
 /*Colors used*/
 
 :root {
-    --text-color: #2b2b2b;
+    --text-color: lightblue;
     --primary-color: #357b70;
     --secondary-color: #e0b354;
-    --light-blue: rgb(199, 247, 247);
+    --light-blue: #031424;
     --dark-green: rgb(132, 97, 16);
     --red: rgb(252, 6, 6);
     --light-grey: rgb(206, 202, 202);
     --orange-saturated: #f76414;
     --light-orange: #edc655;
     --lighest-orange: #fcffad;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.04rem;
     --light-font-weight: 400;
     --heavy-font-weight: 700;
 }
@@ -20,9 +20,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--text-color);
-    font-family: 'Abel', Arial, Helvetica, sans-serif;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
     font-weight: var(--light-font-weight);
     letter-spacing: .125rem;
     font-size: var(--normal-font-size);
@@ -31,28 +35,31 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: var(--heavy-font-weight);
+    color: lightblue;
 }
 
 h2 {
-    font-size: 1.5rem;
+    color: #3c5172;
+    font-size: 2rem;
     font-weight: var(--heavy-font-weight);
 }
 
 a {
     color: var(--primary-color);
-    text-decoration: underline;
+    text-decoration: none;
+
 }
 
-a:visited {
+/* a:visited {
 
     color: var(--dark-green);
-}
+} */
 
 a:hover,
 a:focus {
-    text-decoration: none;
+    margin-bottom: 1px solid white;
 }
 
 a:active {
@@ -60,12 +67,44 @@ a:active {
     color: var(--red);
 }
 
-.default-link {
-    display: block;
-    margin-bottom: 10px;
+.intro-paragraph--sub{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #cf6766;
 }
 
-.button,
+.intro-paragraph{
+    font-size: 3rem;
+    color: #3c5172;
+    font-weight: 700;
+}
+
+.hollow-button{
+border: 2px solid var(--text-color);
+background-color: #031424;
+padding: 10px 20px;
+border-radius: 5px;
+transition: background-color .2s ease-in-out;
+margin-top: 50px;
+display: block;
+}
+
+.hollow-button2 {
+    border: 2px solid lightblue;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background-color .2s ease-in-out;
+}
+
+.hollow-button:hover{
+background-color:#083661c4;
+}
+.hollow-button2:hover{
+background-color:#083661c4;
+}
+
+/* .button,
 button {
     display: inline-block;
     margin-right: 10px;
@@ -88,19 +127,38 @@ button:hover,
 button:focus {
     cursor: pointer;
     opacity: 0.8;
-}
+} */
 
 .button-secondary {
     background: linear-gradient(to bottom right, var(--secondary-color), #b49044);
     color: var(--text-color);
 }
+.two-col-grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 5rem auto;
+    grid-gap: 20px;
+    max-width: 1000px;
+}
+
+
+.about-me-title{
+   grid-column: 1 /span 2;
+   color: lightblue;
+   border-bottom: 1px solid lightblue;
+   padding-bottom: 15px;
+}
 
 .profile__portrait {
-    width: 250px;
-    height: 250px;
-    margin-right: 40px;
-    float: left;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+    transition: all 0.125s ease-in-out;
+}
+.profile__portrait:hover {
+    scale: 1.025;
+    box-shadow: 3px 3px 4px rgba(255,255,255,.3);
 }
 
 .page__footer {
@@ -111,7 +169,7 @@ button:focus {
 }
 
 .profile {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -158,6 +216,10 @@ button:focus {
 }
 
 @media all and (max-width: 500px) {
+
+    .two-col-grid {
+        grid-template-columns: 1fr;
+    }
 
     .grid {
         grid-template-columns: 1fr;

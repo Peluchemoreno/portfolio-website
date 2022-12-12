@@ -12,12 +12,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.production.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Work+Sans:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="page-header">
+    <header class=" page-header">
         <img class="page-header__item" src="img/4373217_java_logo_logos_icon.svg" alt="logo">
         <nav class="main-navigation page-header__item">
             <ul class="navigation-list" role="menubar">
@@ -25,7 +28,7 @@
                     <a href="index.html" role="menuitem">Home</a>
                 </li>
                 <li class="navigation-list__item" role="presentation">
-                    <a href="about.html" role="menuitem">About Me</a>
+                    <a href="#about-me" role="menuitem">About Me</a>
                 </li>
                 <li class="navigation-list__item" role="presentation">
                     <a href="contact.html" role="menuitem">Contact</a>
@@ -37,14 +40,67 @@
         </nav>
     </header>
     <main>
-        <div class="profile">
-            <!--Come back to add a good photo of myself-->
-            <img src="img/JustinMcd.png" alt="Justin McDonald portrait" class="profile__portrait">
-            <h1 class="home-page-title">Hello World!</h1>
-            <p class="intro-paragraph">My name is Justin McDonald. I am a <span>web</span> developer from the US.</p>
-            <button class="button button-secondary"><a href="work.html">Check out some of my code</a></button>
-            <button class="button" type="button">Default Button</button>
-        </div>
+        <section>
+            <div class="profile">
+                <p>Hi, I'm</p>
+                <h1 class="home-page-title">Justin McDonald.</h1>
+                <p class="intro-paragraph">I like to build things for the web.</p>
+                <p class="intro-paragraph--sub">I'm a web developer, passionate about beauty and organization.</p>
+                <button class="hollow-button"><a href="work.html">Check out some of my code</a></button>
+            </div>
+        </section>
+        <section id="about-me">
+            <div class="two-col-grid">
+                <h2 class="about-me-title">About Me</h2>
+                <div class="grid-it">
+                    <h2>Why I Love Web Development</h2>
+                    <p>
+                        I love web development because it allows me to exercise my creative muscles, solve complex and
+                        unique problems, and collorate with a diverse set of minds to achieve a common goal.
+
+                    </p>
+                    <h2>My Hobbies</h2>
+                    <ul>
+                        <li>Playing guitar</li>
+                        <li>Playing videogames</li>
+                        <li>Reading</li>
+                    </ul>
+                    <h2>My Slick Skills</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Skills</th>
+                                <th>Years of Experience</th>
+                                <th>Level of Expertise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML</td>
+                                <td>2</td>
+                                <td>Intermideate</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td>2</td>
+                                <td>Intermideate</td>
+                            </tr>
+                            <tr>
+                                <td>JS</td>
+                                <td>2</td>
+                                <td>Grand Master</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>My Resume and Projects</h2>
+                    <a href="#" class="hollow-button2">Download my resume here</a><br><br>
+                    <a class="hollow-button2" href="work.html">Check out my projects here!</a>
+                </div>
+                <div class="grid-it">
+                    <img src="img/JustinMcd.png" alt="photo of justin mcdonald smiling" class="profile__portrait">
+                </div>
+            </div>
+        </section>
     </main>
     <!--<a href="#" class="default-link">Default Link</a>-->
     <!--<button class="button-secondary">Secondary Button</button>-->
