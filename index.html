@@ -34,7 +34,7 @@
                     <a href="#work" role="menuitem">Work</a>
                 </li>
                 <li class="navigation-list__item" role="presentation">
-                    <a href="contact.html" role="menuitem">Contact</a>
+                    <a href="#contact" role="menuitem">Contact</a>
                 </li>
 
             </ul>
@@ -57,7 +57,7 @@
         </section>
         <section id="about-me">
             <div class="two-col-grid">
-                <h2 class="about-me-title">About Me</h2>
+                <h2 class="a-title">About Me</h2>
                 <div class="grid-it">
                     <h2>Why I Love Web Development</h2>
                     <p>
@@ -108,9 +108,18 @@
         </section>
         <section id="work">
             <div class="container">
-                <h1>My Work</h1>
+                <h2 class="a-title">My Work</h2>
                 <div class="grid">
-                    <div class="grid__item">
+                    <div class="grid__item proj-card">
+                        <h2>Pokedex</h2>
+                        <p>
+                            Within this project, I was responsible for the frontend. It's written in React.js.
+                            Additionally,
+                            I've created the HTML and CSS templates.
+                        </p>
+                        <a href="#">See project on GitHub</a>
+                    </div>
+                    <div class="grid__item proj-card">
                         <h2>Mobile Web App</h2>
                         <p>
                             Within this project, I was responsible for the frontend. It's written in React.js.
@@ -119,7 +128,7 @@
                         </p>
                         <a href="#">See project on GitHub</a>
                     </div>
-                    <div class="grid__item">
+                    <div class="grid__item proj-card">
                         <h2>Mobile Web App</h2>
                         <p>
                             Within this project, I was responsible for the frontend. It's written in React.js.
@@ -128,16 +137,7 @@
                         </p>
                         <a href="#">See project on GitHub</a>
                     </div>
-                    <div class="grid__item">
-                        <h2>Mobile Web App</h2>
-                        <p>
-                            Within this project, I was responsible for the frontend. It's written in React.js.
-                            Additionally,
-                            I've created the HTML and CSS templates.
-                        </p>
-                        <a href="#">See project on GitHub</a>
-                    </div>
-                    <div class="grid__item">
+                    <div class="grid__item proj-card">
                         <h2>Mobile Web App</h2>
                         <p>
                             Within this project, I was responsible for the frontend. It’s written in React.js.
@@ -146,7 +146,7 @@
                         </p>
                         <a href="#">See project on GitHub</a>
                     </div>
-                    <div class="grid__item">
+                    <div class="grid__item proj-card">
                         <h2>Your Project?</h2>
                         <p>
                             This is a description of a project that I do for you!
@@ -154,6 +154,36 @@
                         <a href="#">See project on GitHub</a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2 class="a-title">Contact</h2>
+                <div>
+                    <address>
+                        <p>123 Spaceship Ave</p>
+                        <p>Crater, The Moon, 77600</p>
+                        <p>Email: <a href="mailto:jmcdmoreno19@gmail.com">jmcdmoreno19@gmail.com</a></p>
+                        <p>Tel: <a href="tel:0000000000">000-000-0000</a></p>
+                    </address>
+                    <p><a class="hollow-button href=" mailto:uhhh.quigley@gmail.com">Get in touch with
+                            me!</a></p>
+                </div>
+                <form action="#" method="post" id="contactForm">
+                    <div class="label-container">
+                        <label for="email" class="formLabel">Email: </label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="label-container">
+                        <label for="telephone" class="formLabel">Telephone: </label>
+                        <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    </div>
+                    <div class="label-container">
+                        <label for="message" class="formLabel">Message: </label>
+                        <textarea id="message" required maxlength="240"></textarea>
+                    </div>
+                    <button type="submit" class="hollow-button cta" value="Send message">SEND ME A MESSAGE</button>
+                </form>
             </div>
         </section>
     </main>
