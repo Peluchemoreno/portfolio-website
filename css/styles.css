@@ -49,7 +49,8 @@ h2 {
 a {
     color: var(--primary-color);
     text-decoration: none;
-
+    position: relative;
+    z-index: 1;
 }
 
 /* a:visited {
@@ -338,10 +339,50 @@ background-color:#083661c4;
 }
 
 @media all and (min-width: 501px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
+
+    .container{
+      width: auto;
+      padding: 20px;
     }
 
+    .profile{
+      padding: 20px;
+    }
+
+    .intro-paragraph{
+      line-height: 2.4rem;
+    }
+
+    #contactForm{
+      width: auto;
+    }
+
+    .grid-it.pic{
+      order: -1;
+      text-align: center;
+    }
+    .two-col-grid{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+@media all and (min-width: 751px) and (max-width: 1010px) {
+  .a-title{
+    padding: 20px;
+  }
+
+  .profile{
+    padding: 20px;
+  }
+
+  .container{
+    padding: 20px;
+  }
+
+  .intro-paragraph{
+    line-height: 2.4rem;
+  }
 
 }
 
